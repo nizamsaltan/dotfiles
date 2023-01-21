@@ -26,7 +26,7 @@ These dotfiles works perfectly with these apps, but of course you can change the
 - Shotwell (Image viewer)
 - Dunst (notification deamon)
 - xfce4-screenshot
-- Fonst: Poppins, DM Mono
+- Fonst: [Poppins](https://fonts.google.com/specimen/Poppins?query=Popp "Poppins Font"), [DM Mono](https://fonts.google.com/specimen/DM+Mono?query=DM+Mon "DM Mono Font")
 - [Colloid icon theme](https://github.com/vinceliuice/Colloid-icon-theme "Colloid icon theme")
 - [Fluent light gtk theme](https://github.com/vinceliuice/Fluent-gtk-theme "Fluent light")
 - [Wallpaper: twitter - u/michaelboegl](https://twitter.com/michaelboegl/status/1607831306838097920?s=20 "Wallpaper twitter - u/michaelboegl")
