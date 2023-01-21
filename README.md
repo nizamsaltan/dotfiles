@@ -11,7 +11,7 @@
 #### For polybar spotify module 🎵
 
 https://github.com/Jvanrhijn/polybar-spotify
-(script already installed)
+(script is preinstalled)
 
 - Python (2.x or 3.x)
 - Python [dbus](https://pypi.org/project/dbus-python/ "dbus") module
@@ -39,7 +39,7 @@ These dotfiles works perfectly with these apps, but of course you can change the
 ------------
 
 ### Note for transparency
-there is also a litte bit of transparency with some beatyful blur effect on some apps. You can check full list is in here (to change them, head over to $HOME/.config/picom/picom.conf)
+there is also a litte bit of transparency with some beautiful blur effect on some apps. You can check full list is in here (to change them, head over to $HOME/.config/picom/picom.conf)
 
 for example 95% transparency in 'vscode'
 - "95:class_g = 'Code'",
