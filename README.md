@@ -7,6 +7,12 @@
 - picom
 - rofi
 
+### Optional
+- feh -> wallpaper, image viewer
+- dunst -> notification manager
+- polkit-gnome-authentication-agent -> authentication agent
+- xfce4-screenshooter -> screenshot
+
 
 #### For polybar spotify module 🎵
 
@@ -39,7 +45,9 @@ These dotfiles works perfectly with these apps, but of course you can change the
 
 ------------
 
-### Note for transparency
+## Notes
+
+### Transparency
 there is also a litte bit of transparency with some beautiful blur effect on some apps. You can check full list is in here (to change them, head over to $HOME/.config/picom/picom.conf)
 
 for example 95% transparency in 'vscode'
@@ -52,3 +60,19 @@ for example 95% transparency in 'vscode'
 - "100:class_g = 'firefox'",
 - "100:class_g = 'Unity'",
 - "100:class_g = 'jetbrains-rider'",
+
+### Wallpaper
+Wallpaper defined inside i3 config file which uses 'feh' for image viewer. To change wallpaper, check /usr/share/wallpapers/wallpaper.jpg and of course you can change image format
+
+### Basic shortcuts
+These are my personal shorcuts. Most of them placed inside i3 config file.
+
+- $MOD = windows/super key
+- $MOD+Q = kill window
+- $MOD+Shift+E = power menu
+- $MOD+D = rofi
+- $MOD+CTRL+'Arrow Keys' = resize window 1px
+- $MOD+CTRL+LeftShift+'Arrow Keys' = resize window 10px
+- $MOD+Shift+'Arrow Keys' = move window
+- $MOD+Shift+S = screenshot region
+- $MOD+PrintScreen = fullscreen screenshot
