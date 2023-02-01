@@ -252,8 +252,10 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 bindsym $mod+w exec /usr/bin/firefox
 bindsym $mod+n exec /usr/bin/thunar
 
-# Screenshot
-bindsym $mod+Shift+s exec xfce4-screenshooter -r -s "$HOME/Pictures/Screenshot_$(date +%Y-%m-%d_%H-%M-%S).png" && notify-send "Screenshot saved"
+# Screenshot region
+bindsym $mod+Shift+s exec xfce4-screenshooter -r -s "$HOME/Pictures/Screenshot_$(date +%>
+# fullscreen
+bindsym Print exec xfce4-screenshooter -f -s "$HOME/Pictures/Screenshot_$(date +%Y-%m-%d>
 
 #bindsym $mod+i exec gscreenshot -f '$hx$w_%Y-%m-%d.png' -s
 #bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
@@ -302,9 +304,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #############################################
 
 #get auth work with polkit-gnome
-#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id gnome-keyring-daemon
-exec --no-startup-id kwalletd5
+#exec --no-startup-id kwalletd5
 #exec --no-startup-id kwalletmanager5
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
@@ -330,7 +332,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/buzos/wallpapers/=wallpaper.jpg
+exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/wallpapers/wallpaper.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -347,9 +349,9 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 #exec --no-startup-id xscreensaver --no-splash
 
 # Desktop notifications
-#exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
+exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 # alternative if you installed aside with XFCE4:
-exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
+#exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 # autotiling script
 # https://github.com/nwg-piotr/autotiling
